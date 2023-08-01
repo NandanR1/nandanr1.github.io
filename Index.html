@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <base href="https://designmodo.com/slides/app/">
+    <title>Main page</title>
+    <meta property="og:title" content="Main page" />
+    <meta name="twitter:title" content="Main page" />
+    <meta name="description" content="This is the main (index) page of your project." />
+    <meta name="og:description" content="This is the main (index) page of your project." />
+    <meta name="twitter:description" content="This is the main (index) page of your project." />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- jQuery 3.6.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Compressed Styles -->
+    <link href="css/slides.min.css?611360" rel="stylesheet" type="text/css" id="js-slides-css">
+
+    <!-- Fonts and Material Icons -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap" id="js-google-fonts" />
+    <style id="js-slides-fonts">
+        .slides { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
+    </style>
+
+    <link rel="preload" href="assets/svg/icon-set.svg?p=0LqchCHA" as="image" type="image/svg+xml" crossorigin>
+
+    <style>
+        /* Custom styles to make the text visible */
+        .content {
+            color: white; /* Change the text color to white or any other suitable color */
+        }
+        .button {
+            color: white; /* Change the button text color to white or any other suitable color */
+        }
+    </style>
+</head>
+<body class="slides animated noPreload">
+<!-- Navigation -->
+<nav class="side">
+    <div class="navigation default">
+        <ul></ul>
+    </div>
+</nav>
+<!-- Slide 02 (#1) -->
+<section class="slide fade-6 kenBurns">
+    <div class="content">
+        <div class="container">
+            <div class="wrap">
+                <div class="fix-3-12">
+                    <svg height="77" class="wide ae-1 fromCenter"><use href="assets/svg/icons.svg#logo"></use></svg>
+                </div>
+                <h1 class="cropBottom ae-1 fromCenter">PROJECT</h1>
+                <div class="button blue rounded cropBottom popupTrigger ae-2 fromCenter margin-top-3" data-popup-id="2">
+                    <i class="material-icons">play_circle_filled</i>Watch the Video
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background" style="background-image:url(assets/img/background/img-25.jpg)"></div>
+</section>
+<!-- Popup Video -->
+<div class="popup autoplay" data-popup-id="2">
+    <div class="close"><svg><use href="assets/svg/icons.svg#close"></use></svg></div>
+    <div class="content">
+        <div class="container">
+            <div class="wrap">
+                <div class="fix-10-12">
+                    <div class="embedVideo popupContent shadow rounded">
+                        <!-- Replace this with your actual video embed URL from YouTube -->
+                        <iframe data-src="https://www.youtube.com/embed/A_zzTrR9Uko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Compressed Scripts -->
+<script src="js/slides.min.js?611360" type="text/javascript"></script>
+
+</body>
+</html>
